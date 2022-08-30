@@ -1,7 +1,7 @@
 import Book1Img from './img/image1.png';
 import { useEffect } from 'react';
 
-export default function Card(){
+export default function Music_box(){
 
     const loadScript = (src) => {
         return new Promise((resolve) => {

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Card from './Card';
+import Music_box from './Music_box';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Card></Card>
+    <Music_box></Music_box>
   </React.StrictMode>
 );
