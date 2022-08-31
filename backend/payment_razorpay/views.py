@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 
-razorpay_client = razorpay.Client(auth=("rzp_test_XjxJeSspeBN1S6", "V4swZ111Dvwl5Zc8uJBChMCH"))
+razorpay_client = razorpay.Client(auth=("rzp_test_Xsjdhgf32uy45twjher", "Jwmhegfhg6587987MCH"))
 
 @csrf_exempt
 def create_subscription(request):
@@ -29,7 +29,7 @@ def create_subscription(request):
 
         response_data = {
                 "callback_url": "http://127.0.0.1:8000/payment/callback",
-                "razorpay_key": "rzp_test_XjxJeSspeBN1S6",
+                "razorpay_key": "rzp_test_Xsjdhgf32uy45twjher",
                 "order": razorpay_subscription_res,
                 "product_name": product_name
         }
@@ -42,6 +42,7 @@ def create_subscription(request):
 @csrf_exempt
 def subscription_callback(request):
     if request.method == "POST":
+        print(request.POST)
         if "razorpay_signature" in request.POST:
             payment_verification = razorpay_client.utility.verify_subscription_payment_signature(request.POST)
             if payment_verification:

@@ -70,7 +70,7 @@ export default function Music_box(){
                     <img className='w-48 mx-auto' src={Book1Img} alt="" />
                     <p className='mt-5 text-lg'>Price : ₹ 30</p>
                     <button type='button' className="mt-2 mb-2 inline-flex items-center px-2.5 py-1.5 border border-transparent text-lg font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                     onClick={e=>{makePayment(e, 1, "Monthly Subscription", "plan_KBo1U1fwUwehqK")}}
+                     onClick={e=>{makePayment(e, 1, "Monthly Subscription", "plan_KBosdfjkhgsdjhfgs")}}
                      >Proceed to Buy</button>
                 </div>
             </section>
